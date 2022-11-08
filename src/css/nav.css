@@ -1,0 +1,14 @@
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #3E6D9C;
+    height: 100px;
+    font-size: 30px; 
+}
+.nav a {
+    color: #FD841F;
+}
+.nav a:hover {
+    color: #E14D2A;
+}
