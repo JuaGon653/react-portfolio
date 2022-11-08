@@ -1,0 +1,6 @@
+.box {
+    background: #001253;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
