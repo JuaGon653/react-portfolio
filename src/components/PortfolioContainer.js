@@ -21,6 +21,10 @@ export default function PortfolioContainer() {
         };
     };
 
+    const handlePageChange = function(page) {
+        setCurrentPage(page);
+    };
+
     return (
         <div>
             <Nav />
