@@ -27,7 +27,7 @@ export default function PortfolioContainer() {
 
     return (
         <div>
-            <Nav />
+            <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
         </div>
     )
 }
