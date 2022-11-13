@@ -1,4 +1,7 @@
 import React from 'react';
+import Ping from '../../images/8544713_pin_navigation_location_map_gps_icon.png';
+import Phone from '../../images/211830_telephone_icon.png';
+import Gmail from '../../images/4202011_email_gmail_mail_logo_social_icon.png';
 
 export default function Contact() {
     return (
@@ -52,16 +55,16 @@ export default function Contact() {
                     </div>
                     <div class="col-md-3 text-center">
                         <ul class="list-unstyled mb-0">
-                            <li><a target="_blank" href="http://maps.google.com/?q=New Braunfels, TX, USA"><img class="fas fa-2x contact-img" src="images/8544713_pin_navigation_location_map_gps_icon.png"></img></a>
+                            <li><a target="_blank" href="http://maps.google.com/?q=New Braunfels, TX, USA"><img class="fas fa-2x contact-img" src={Ping}></img></a>
                                 <p>New Braunfels, TX 78130, USA</p>
                             </li>
 
-                            <li><a href="tel:+1(830)822-1234"><img class="fas fa-2x contact-img" src="images/211830_telephone_icon.png"></img></a>
+                            <li><a href="tel:+1(830)822-1234"><img class="fas fa-2x contact-img" src={Phone}></img></a>
                                 <p>+1 (830)822-1234</p>
                             </li>
 
                             <li>
-                                <a class="personal-email" href="mailto:juaninnb4096@gmail.com"><img class="fas contact-img fa-2x" src="images/4202011_email_gmail_mail_logo_social_icon.png"></img></a>
+                                <a class="personal-email" href="mailto:juaninnb4096@gmail.com"><img class="fas contact-img fa-2x" src={Gmail}></img></a>
                                 <p>juaninnb4096@gmail.com</p>
                             </li>
                         </ul>
