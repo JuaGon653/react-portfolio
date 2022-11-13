@@ -112,11 +112,19 @@ html, body {
     justify-content: space-between;
     max-height: 50px;
 }
-.card-top:first-of-type a, .card-top a h5 {
+.card-top:first-of-type a {
     padding-top: 5px;
     font-size: 30px;
     color: white;
-    text-decoration-color:#FD841F;
+    text-decoration: none;
+}
+.card-top:first-of-type a:hover {
+    text-decoration: underline #FD841F;
+}
+.card-top a h5 {
+    padding-top: 5px;
+    font-size: 30px;
+    color: white;
 }
 .card-text {
     color: #FD841F;
