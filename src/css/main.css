@@ -1,0 +1,134 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    background: #001253;
+}
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* nav bar */
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #3E6D9C;
+    height: 100px;
+    font-size: 30px; 
+}
+.nav a {
+    color: #FD841F;
+}
+.nav a:hover {
+    color: #E14D2A;
+}
+@media screen and (max-width: 620px) {
+    .nav {
+        display: inline-table;
+        text-align: center;
+        height: 125px;
+    }
+}
+
+/* about me page */
+.about-me {
+    color: white;
+    padding: 10px 20px;
+}
+.my-photo {
+    margin: 10px 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    background: transparent;
+    padding: 10px
+}
+.foot-link:hover {
+    text-decoration: none;
+}
+.footer-img {
+    margin: 0 5px;
+    height: 35px;
+    width: 35px;
+}
+.footer-img:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 80px 40px 20px #ffffff;
+}
+
+/* portfolio */
+.mid-div {
+    padding: 100px 0;
+    margin: 0 auto;
+    width: 70%;
+    flex-grow: 1;
+}
+@media screen and (max-width: 620px){
+    .projects-div {
+        margin: 0 -15px;
+        width: 100%;
+    }
+}
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+}
+.project-item {
+    padding: 15px;
+}
+.project-img {
+    width: 350px;
+    height: 230px;
+}
+.card:hover .card-img-overlay {
+    display: block;
+}
+.card .card-img {
+    transition: .5s;
+}
+.card:hover .card-img {
+    filter: blur(4px) brightness(50%);
+}
+.card-img-overlay {
+    display: none;
+}
+.card-github-logo {
+    height: 35px;
+    width: 35px;
+}
+.card-top {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    max-height: 50px;
+}
+.card-top:first-of-type a, .card-top a h5 {
+    padding-top: 5px;
+    font-size: 30px;
+    color: white;
+    text-decoration-color:#FD841F;
+}
+.card-text {
+    color: #FD841F;
+}
+
+.contact-form {
+    color: white;
+}
+.contact-img {
+    width: 50px;
+    height: 50px;
+}
+.personal-email {
+    text-decoration: none;
+    color: white;
+}
