@@ -5,22 +5,22 @@ export default function Nav({ currentPage, handlePageChange }) {
         <div>
             <ul className='nav col-12'>
                 <li className="nav-item">
-                    <a href='#AboutMe' className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'} onClick={() => handlePageChange('AboutMe')}>
+                    <a href='#AboutMe' className={currentPage === 'AboutMe' ? 'nav-link custom-active' : 'nav-link'} onClick={() => handlePageChange('AboutMe')}>
                         About Me
                     </a>
                 </li>
                 <li>
-                    <a href='#Porfolio' className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'} onClick={() => handlePageChange('Portfolio')}>
+                    <a href='#Porfolio' className={currentPage === 'Portfolio' ? 'nav-link custom-active' : 'nav-link'} onClick={() => handlePageChange('Portfolio')}>
                         Portfolio
                     </a>
                 </li>
                 <li>
-                    <a href='#Contact' className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'} onClick={() => handlePageChange('Contact')}>
+                    <a href='#Contact' className={currentPage === 'Contact' ? 'nav-link custom-active' : 'nav-link'} onClick={() => handlePageChange('Contact')}>
                         Contact
                     </a>
                 </li>
                 <li>
-                    <a href='#Resume' className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'} onClick={() => handlePageChange('Resume')}>
+                    <a href='#Resume' className={currentPage === 'Resume' ? 'nav-link custom-active' : 'nav-link'} onClick={() => handlePageChange('Resume')}>
                         Resume
                     </a>
                 </li>
