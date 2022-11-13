@@ -141,3 +141,7 @@ html, body {
     text-decoration: none;
     color: white;
 }
+
+.custom-active {
+    color: #E14D2A;
+}
