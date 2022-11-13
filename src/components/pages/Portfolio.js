@@ -5,34 +5,34 @@ import GitHub from '../../images/GitHub-Mark-Light-64px.png';
 
 export default function Portfolio() {
     return (
-        <div class="mid-div">
-            <h1 class="text-white">Portfolio</h1>
-            <ul class="projects-list">
+        <div className="mid-div">
+            <h1 className="text-white">Portfolio</h1>
+            <ul className="projects-list">
                 {/* <!-- first li is wanted style of project --> */}
-                <li class="project-item">
-                    <div class="card bg-dark text-white">
-                        <img class="card-img project-img" src={DailyDelight} alt="Card image"></img>
-                        <div class="card-img-overlay">
-                            <div class="card-top">
-                                <a target="_blank" href="https://natedogg97.github.io/DailyDelight/"><h5 class="card-title">Daily Delight</h5></a>
-                                <a target="_blank" href="https://github.com/NateDogg97/DailyDelight"><img class="card-github-logo" src={GitHub}></img></a>
+                <li className="project-item">
+                    <div className="card bg-dark text-white">
+                        <img className="card-img project-img" src={DailyDelight} alt="Card image"></img>
+                        <div className="card-img-overlay">
+                            <div className="card-top">
+                                <a target="_blank" href="https://natedogg97.github.io/DailyDelight/"><h5 className="card-title">Daily Delight</h5></a>
+                                <a target="_blank" href="https://github.com/NateDogg97/DailyDelight"><img className="card-github-logo" src={GitHub}></img></a>
                             </div>
-                            <p class="card-text">MERN Stack</p>
+                            <p className="card-text">MERN Stack</p>
                         </div>
                     </div>
                 </li>
-                <li class="project-item">
-                    <img class="project-img" src={fillerProjectImage}></img>
+                <li className="project-item">
+                    <img className="project-img" src={fillerProjectImage}></img>
                 </li>
-                <li class="project-item">
-                    <div class="card bg-dark text-white">
-                        <img class="card-img project-img" src={fillerProjectImage} alt="Card image"></img>
-                        <div class="card-img-overlay">
-                            <div class="card-top">
-                                <h5 class="card-title">Daily Delight</h5>
-                                <img class="card-github-logo" src={GitHub}></img>
+                <li className="project-item">
+                    <div className="card bg-dark text-white">
+                        <img className="card-img project-img" src={fillerProjectImage} alt="Card image"></img>
+                        <div className="card-img-overlay">
+                            <div className="card-top">
+                                <h5 className="card-title">Daily Delight</h5>
+                                <img className="card-github-logo" src={GitHub}></img>
                             </div>
-                            <p class="card-text">MERN Stack</p>
+                            <p className="card-text">MERN Stack</p>
                         </div>
                     </div>
                 </li>
