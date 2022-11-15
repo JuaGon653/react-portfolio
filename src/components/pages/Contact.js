@@ -2,8 +2,29 @@ import React from 'react';
 import Ping from '../../images/8544713_pin_navigation_location_map_gps_icon.png';
 import Phone from '../../images/211830_telephone_icon.png';
 import Gmail from '../../images/4202011_email_gmail_mail_logo_social_icon.png';
+import { useState } from 'react';
 
 export default function Contact() {
+    const [status, setStatus] = useState('');
+
+    function checkForm() {
+        const nameText = document.querySelector('#name').value.trim();
+        const emailText = document.querySelector('#email').value.trim();
+        const subjectText = document.querySelector('#subject').value.trim();
+        const messageText = document.querySelector('#message').value.trim();
+        document.querySelector('.status').style.color = 'red';
+
+        if (!nameText) {
+            setStatus('Please provide a name.');
+        } else if (!emailText) {
+            setStatus('Please provide a email.');
+        } else if (!subjectText) {
+            setStatus('Please provide a subject');
+        } else if (!messageText) {
+            setStatus('Please provide a message.');
+        }
+    }
+
     return (
         <div className="mid-div">
             <section className="contact-form mb-4">
@@ -49,9 +70,9 @@ export default function Contact() {
                         </form>
 
                         <div className="text-center text-md-left">
-                            <a className="btn btn-primary" onClick={() => document.getElementById('contact-form').submit()}>Send</a>
+                            <a className="btn btn-primary" onClick={() => checkForm()}>Send</a>
                         </div>
-                        <div className="status"></div>
+                        <div className="status">{status}</div>
                     </div>
                     <div className="col-md-3 text-center">
                         <ul className="list-unstyled mb-0">
