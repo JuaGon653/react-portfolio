@@ -145,3 +145,11 @@ html, body {
 .custom-active {
     color: #E14D2A;
 }
+
+.resume-link {
+    text-decoration: none;
+    color: #FD841F
+}
+.resume-link:hover {
+    color: #E14D2A
+}
