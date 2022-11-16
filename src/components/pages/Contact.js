@@ -2,28 +2,54 @@ import React from 'react';
 import Ping from '../../images/8544713_pin_navigation_location_map_gps_icon.png';
 import Phone from '../../images/211830_telephone_icon.png';
 import Gmail from '../../images/4202011_email_gmail_mail_logo_social_icon.png';
-import { useState } from 'react';
 
 export default function Contact() {
-    const [status, setStatus] = useState('');
 
     function checkForm() {
-        const nameText = document.querySelector('#name').value.trim();
-        const emailText = document.querySelector('#email').value.trim();
-        const subjectText = document.querySelector('#subject').value.trim();
-        const messageText = document.querySelector('#message').value.trim();
-        document.querySelector('.status').style.color = 'red';
+        const nameEl = document.querySelector('#name');
+        const emailEl = document.querySelector('#email');
+        const messageEl = document.querySelector('#message');
+        const statusMessageEl = document.querySelector('.status-message'); 
 
-        if (!nameText) {
-            setStatus('Please provide a name.');
-        } else if (!emailText) {
-            setStatus('Please provide a email.');
-        } else if (!subjectText) {
-            setStatus('Please provide a subject');
-        } else if (!messageText) {
-            setStatus('Please provide a message.');
+        if (!nameEl.value.trim()) {
+            nameEl.nextElementSibling.nextElementSibling.textContent = "* required";
+            statusMessageEl.textContent = 'Please fill out indicated field(s).';
         }
-    }
+        if (!emailEl.value.trim()) {
+            emailEl.nextElementSibling.nextElementSibling.textContent = "* required";
+            statusMessageEl.textContent = 'Please fill out indicated field(s).';
+        }
+        if (!messageEl.value.trim()) {
+            messageEl.nextElementSibling.nextElementSibling.textContent = "* required";
+            statusMessageEl.textContent = 'Please fill out indicated field(s).';
+        }
+
+        // with all necessary fields filled out, empty input values to illuminate a form submit
+        if (nameEl.value.trim() && emailEl.value.trim() && messageEl.value.trim()) {
+            nameEl.value = "";
+            emailEl.value = "";
+            messageEl.value = "";
+            document.querySelector('#subject').value = "";
+        }
+    };
+
+    function formChange() {
+        const nameEl = document.querySelector('#name');
+        const emailEl = document.querySelector('#email');
+        const messageEl = document.querySelector('#message');
+        if (nameEl.value.trim()) {
+            nameEl.nextElementSibling.nextElementSibling.textContent = "*"
+        }
+        if (emailEl.value.trim()) {
+            emailEl.nextElementSibling.nextElementSibling.textContent = "*"
+        }
+        if (messageEl.value.trim()) {
+            messageEl.nextElementSibling.nextElementSibling.textContent = "*"
+        }
+        if (nameEl.value.trim() && emailEl.value.trim() && messageEl.value.trim()) {
+            document.querySelector('.status-message').textContent = "";
+        }
+    };
 
     return (
         <div className="mid-div">
@@ -34,25 +60,29 @@ export default function Contact() {
 
                 <div className="row">
                     <div className="col-md-9 mb-md-0 mb-5">
-                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <form id="contact-form" name="contact-form">
                             <div className="row">
                                 <div className="col-md-6">
                                     <div className="md-form mb-0">
-                                        <input type="text" id="name" name="name" className="form-control"></input>
+                                        <input type="text" id="name" name="name" className="form-control" onChange={() => formChange()}></input>
                                         <label htmlFor="name" className="">Your name</label>
+                                        {' '}
+                                        <span className="status">*</span>
                                     </div>
                                 </div>
                                 <div className="col-md-6">
                                     <div className="md-form mb-0">
-                                        <input type="text" id="email" name="email" className="form-control"></input>
+                                        <input type="text" id="email" name="email" className="form-control" onChange={() => formChange()}></input>
                                         <label htmlFor="email" className="">Your email</label>
+                                        {' '}
+                                        <span className="status">*</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-md-12">
                                     <div className="md-form mb-0">
-                                        <input type="text" id="subject" name="subject" className="form-control"></input>
+                                        <input type="text" id="subject" name="subject" className="form-control" onChange={() => formChange()}></input>
                                         <label htmlFor="subject" className="">Subject</label>
                                     </div>
                                 </div>
@@ -61,8 +91,10 @@ export default function Contact() {
                                 <div className="col-md-12">
 
                                     <div className="md-form">
-                                        <textarea type="text" id="message" name="message" rows="2" className="form-control md-textarea"></textarea>
+                                        <textarea type="text" id="message" name="message" rows="2" className="form-control md-textarea" onChange={() => formChange()}></textarea>
                                         <label htmlFor="message">Your message</label>
+                                        {' '}
+                                        <span className="status">*</span>
                                     </div>
 
                                 </div>
@@ -70,9 +102,9 @@ export default function Contact() {
                         </form>
 
                         <div className="text-center text-md-left">
-                            <a className="btn btn-primary" onClick={() => checkForm()}>Send</a>
+                            <a className="btn btn-primary" onClick={() => {checkForm()}}>Send</a>
                         </div>
-                        <div className="status">{status}</div>
+                        <span className="status status-message"></span>
                     </div>
                     <div className="col-md-3 text-center">
                         <ul className="list-unstyled mb-0">
