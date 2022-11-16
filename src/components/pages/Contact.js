@@ -72,7 +72,7 @@ export default function Contact() {
                                 </div>
                                 <div className="col-md-6">
                                     <div className="md-form mb-0">
-                                        <input type="text" id="email" name="email" className="form-control" onChange={() => formChange()}></input>
+                                        <input type="text" id="email" name="email" className="form-control" onChange={() => formChange()} placeholder="example@gmail.com"></input>
                                         <label htmlFor="email" className="">Your email</label>
                                         {' '}
                                         <span className="status">*</span>
