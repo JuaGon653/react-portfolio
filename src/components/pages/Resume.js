@@ -4,7 +4,7 @@ export default function Resume() {
     return (
         <div className="mid-div text-white">
             <h1>Resume</h1>
-            <h3>Download my <a rel="noopener noreferrer" target="_blank" href="https://docs.google.com/document/d/1bB0ajJg6edsoTCJK9YJJT0DzFJLV7TyQpdACHwqo2NM/edit?usp=sharing" className="resume-link">resume</a></h3>
+            <h3>View my <a rel="noopener noreferrer" target="_blank" href="https://docs.google.com/document/d/1bB0ajJg6edsoTCJK9YJJT0DzFJLV7TyQpdACHwqo2NM/edit?usp=sharing" className="resume-link">resume</a></h3>
             <div className="pl-5 pt-2">
                 <h2 className="font-weight-bold">Front-End Skills</h2>
                 <ul className="pl-5 pt-2 font-italic">
