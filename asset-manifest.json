@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.f1eb4b75.css",
+    "main.js": "/react-portfolio/static/js/main.c6175277.js",
+    "static/media/me.jpeg": "/react-portfolio/static/media/me.35a9a6907909b727a669.jpeg",
+    "static/media/road.jpg": "/react-portfolio/static/media/road.fb037abb53ecc9271956.jpg",
+    "static/media/dailyDelight.png": "/react-portfolio/static/media/dailyDelight.03b98027ff7610bb896b.png",
+    "static/media/gmailIcon.png": "/react-portfolio/static/media/gmailIcon.dbf14da7fa77545ea19d.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.f1eb4b75.css.map": "/react-portfolio/static/css/main.f1eb4b75.css.map",
+    "main.c6175277.js.map": "/react-portfolio/static/js/main.c6175277.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1eb4b75.css",
+    "static/js/main.c6175277.js"
+  ]
+}
