@@ -28,7 +28,7 @@ export default function Portfolio() {
                         <div className="card-img-overlay">
                             <div className="card-top">
                                 <a target="_blank" href="https://roadtrip-planner-project.herokuapp.com/"><h5 className="card-title">Trip Planner</h5></a>
-                                <a target="_blank" href="https://github.com/NateDogg97/DailyDelight"><img className="card-github-logo" src={GitHub}></img></a>
+                                <a target="_blank" href="https://github.com/patctan/Project-2"><img className="card-github-logo" src={GitHub}></img></a>
                             </div>
                             <p className="card-text">MERN Stack</p>
                         </div>
