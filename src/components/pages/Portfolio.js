@@ -2,6 +2,7 @@ import React from 'react';
 import DailyDelight from '../../images/1373f3c5c6a846f969e959f0b50fbeab.png';
 import fillerProjectImage from '../../images/project-planning-header@2x.png';
 import GitHub from '../../images/GitHub-Mark-Light-64px.png';
+import RoadPlanner from '../../images/1644515779_Science-trips-Roads-where-are-the-longest-straight-lines.jpg'
 
 export default function Portfolio() {
     return (
@@ -22,15 +23,12 @@ export default function Portfolio() {
                     </div>
                 </li>
                 <li className="project-item">
-                    <img className="project-img" src={fillerProjectImage}></img>
-                </li>
-                <li className="project-item">
                     <div className="card bg-dark text-white">
-                        <img className="card-img project-img" src={fillerProjectImage} alt="Card image"></img>
+                        <img className="card-img project-img" src={RoadPlanner} alt="Card image"></img>
                         <div className="card-img-overlay">
                             <div className="card-top">
-                                <h5 className="card-title">Daily Delight</h5>
-                                <img className="card-github-logo" src={GitHub}></img>
+                                <a target="_blank" href="https://roadtrip-planner-project.herokuapp.com/"><h5 className="card-title">Trip Planner</h5></a>
+                                <a target="_blank" href="https://github.com/NateDogg97/DailyDelight"><img className="card-github-logo" src={GitHub}></img></a>
                             </div>
                             <p className="card-text">MERN Stack</p>
                         </div>
