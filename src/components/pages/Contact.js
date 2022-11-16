@@ -1,7 +1,7 @@
 import React from 'react';
-import Ping from '../../images/8544713_pin_navigation_location_map_gps_icon.png';
-import Phone from '../../images/211830_telephone_icon.png';
-import Gmail from '../../images/4202011_email_gmail_mail_logo_social_icon.png';
+import Ping from '../../images/mapPingIcon.png';
+import Phone from '../../images/telephoneIcon.png';
+import Gmail from '../../images/gmailIcon.png';
 
 export default function Contact() {
 

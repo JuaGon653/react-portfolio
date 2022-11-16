@@ -1,8 +1,7 @@
 import React from 'react';
-import DailyDelight from '../../images/1373f3c5c6a846f969e959f0b50fbeab.png';
-import fillerProjectImage from '../../images/project-planning-header@2x.png';
+import DailyDelight from '../../images/dailyDelight.png';
 import GitHub from '../../images/GitHub-Mark-Light-64px.png';
-import RoadPlanner from '../../images/1644515779_Science-trips-Roads-where-are-the-longest-straight-lines.jpg'
+import RoadPlanner from '../../images/road.jpg'
 
 export default function Portfolio() {
     return (
