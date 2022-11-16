@@ -153,3 +153,7 @@ html, body {
 .resume-link:hover {
     color: #E14D2A
 }
+
+.status {
+    color: red;
+}
